@@ -148,7 +148,7 @@ section {
     right: 2.5rem;
     cursor: pointer;
     color: #fff;
-    font-size: 6rem;
+    font-size: 4rem;
 }
 
 .search-form #close-search:hover {
@@ -374,15 +374,271 @@ section {
     color: #219150;
 }
 
-.shop .slide .content i{
+.shop .slide .content .starts i{
     font-size: 1.7rem;
     color: #ffd100;
 }
 
+.packages{
+    background: #eee;
+}
 
+.packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap:1.5rem;
+}
 
+.packages .box-container .box {
+    text-align: center;
+    background: #fff;
+    border: .2rem solid #10221b;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+.packages .box-container .box:hover{
+    background: #10221b;
+}
 
+.packages .box-container .box:hover .content > *{
+    color: #fff;
+}
 
+.packages .box-container .box:hover .btn {
+    border-color:#fff ;
+}
+
+.packages .box-container .box:hover .btn:hover {
+    background: #fff;
+    color: #10221b;
+}
+
+.packages .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    border-radius: .5rem;
+}
+
+.packages .box-container .box .content {
+    padding: 2rem;
+}
+
+.packages .box-container .box .content h3{
+    font-size: 2rem;
+    color: #10221b;
+}
+
+.packages .box-container .box .content p{
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.packages .box-container .box .content .price {
+    font-size: 2rem;
+    color: #219150;
+}
+
+.reviews .slide .text{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    background: #eee;
+    border-radius: 1rem;
+    color: #10221b;
+    line-height: 2;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 3rem;
+}
+
+.reviews .slide .text::before {
+    content: '';
+    position: absolute;
+    bottom: -1.4rem;
+    left: 1.2rem;
+    height: 4rem;
+    width: 3rem;
+    background: #eee;
+    transform: rotate(45deg);
+}
+
+.reviews .slide .user {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reviews .slide .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.reviews .slide .user .info h3{
+    font-size: 2rem;
+    color: #10221b;
+} 
+
+.reviews .slide .user .info span{
+    color: #219150;
+    font-size: 1.5rem;
+}
+
+.services{
+    background: #eee;
+}
+
+.services .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 1.5rem;
+}
+
+.services .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    border: .2rem solid #10221b;
+    border-radius: 1rem;
+    background: #fff;
+}
+
+.services .box-container .box:hover {
+    background: #10221b;
+}
+
+.services .box-container .box:hover img{
+    filter: invert(1);
+}
+
+.services .box-container .box:hover p {
+    color: #fff;
+}
+
+.services .box-container .box:hover .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
+.services .box-container .box:hover .btn:hover {
+  background: #fff;
+  color: #10221b;
+}
+
+.services .box-container .box img {
+  height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.services .box-container .box h3{
+    color: #219150;
+    font-size: 2rem;
+}
+
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.blogs .slide{
+    text-align: center;
+    padding: 2rem;
+}
+
+.blogs .slide img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.blogs .slide .icons {
+    position: relative;
+    background: #10221b;
+    padding: 1rem;
+    top: -2rem;
+    display: inline-block;
+    border-radius: .5rem;
+}
+
+.blogs .slide .icons a{
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+
+.blogs .slide .icons a:hover{
+    color: #219150;
+}
+
+.blogs .slide .icons a i{
+    color: #219150;
+    padding-right: .5rem;
+}
+
+.blogs .slide h3{
+    font-size: 2rem;
+    color: #10221b;
+}
+
+.blogs .slide p{
+    font-size: 1.4rem;
+    color: #10221b;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.newsletter{
+    background: #eee;
+}
+
+.newsletter .content{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.newsletter .content form{
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 5rem;
+    border: .2rem solid #10221b;
+    padding: .7rem;
+    display: flex;
+}
+
+.newsletter .content form .email {
+  width: 100%;
+  background: none;
+  text-transform: none;
+  font-size: 1.6rem;
+  color: #10221b;
+  padding: 0 1.3rem;
+}
+
+.newsletter .content form .btn {
+  margin-top: 0;
+  border-radius: 5rem;
+  background: #10221b;
+  color: #fff;
+}
+
+.newsletter .content form .btn:hover {
+  background: none;
+  color: #10221b;
+}
 
 
 

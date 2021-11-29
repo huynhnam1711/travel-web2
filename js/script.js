@@ -54,20 +54,65 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-$('.carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
+// swiper
+var swiper = new Swiper(".review-slider", {
+    loop:true, 
+    grabCursor:true,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
         },
-        600:{
-            items:3
+        640: {
+          slidesPerView: 2,
         },
-        1000:{
-            items:4
-        }
-    }
-})
+        768: {
+          slidesPerView: 3,
+        },
+    },
+});
 
+var swiper = new Swiper(".blogs-slider", {
+    loop:true, 
+    grabCursor:true,
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+    },
+});
+
+var swiper = new Swiper(".clients-slider", {
+    loop:true, 
+    grabCursor:true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+    },
+});
